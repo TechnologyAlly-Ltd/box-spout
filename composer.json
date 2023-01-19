@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Box\\Spout\\": "src/Spout"
+            "TA\\Spout\\": "src/Spout"
         }
     },
     "extra": {
