@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Entity;
+namespace TA\Spout\Writer\Common\Entity;
 
 /**
  * Class Workbook

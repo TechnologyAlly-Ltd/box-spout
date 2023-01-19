@@ -1,21 +1,21 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX;
+namespace TA\Spout\Writer\XLSX;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\CellAlignment;
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Reader\Wrapper\XMLReader;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\Style\BorderBuilder;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
-use Box\Spout\Writer\XLSX\Manager\OptionsManager;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Entity\Style\Border;
+use TA\Spout\Common\Entity\Style\CellAlignment;
+use TA\Spout\Common\Entity\Style\Color;
+use TA\Spout\Common\Entity\Style\Style;
+use TA\Spout\Reader\Wrapper\XMLReader;
+use TA\Spout\TestUsingResource;
+use TA\Spout\Writer\Common\Creator\Style\BorderBuilder;
+use TA\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use TA\Spout\Writer\Common\Creator\WriterEntityFactory;
+use TA\Spout\Writer\Common\Manager\Style\StyleMerger;
+use TA\Spout\Writer\Exception\WriterNotOpenedException;
+use TA\Spout\Writer\RowCreationHelper;
+use TA\Spout\Writer\XLSX\Manager\OptionsManager;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -26,7 +26,7 @@ class WriterWithStyleTest extends TestCase
     use TestUsingResource;
     use RowCreationHelper;
 
-    /** @var \Box\Spout\Common\Entity\Style\Style */
+    /** @var \TA\Spout\Common\Entity\Style\Style */
     private $defaultStyle;
 
     /**
@@ -593,7 +593,7 @@ class WriterWithStyleTest extends TestCase
     /**
      * @param Row[] $allRows
      * @param string $fileName
-     * @param \Box\Spout\Common\Entity\Style\Style|null $defaultStyle
+     * @param \TA\Spout\Common\Entity\Style\Style|null $defaultStyle
      * @return Writer
      */
     private function writeToXLSXFileWithDefaultStyle($allRows, $fileName, $defaultStyle)

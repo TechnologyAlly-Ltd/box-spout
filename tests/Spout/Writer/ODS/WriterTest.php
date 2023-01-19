@@ -1,18 +1,18 @@
 <?php
 
-namespace Box\Spout\Writer\ODS;
+namespace TA\Spout\Writer\ODS;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Exception\SpoutException;
-use Box\Spout\Reader\Wrapper\XMLReader;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Exception\WriterAlreadyOpenedException;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Exception\InvalidArgumentException;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Common\Exception\SpoutException;
+use TA\Spout\Reader\Wrapper\XMLReader;
+use TA\Spout\TestUsingResource;
+use TA\Spout\Writer\Common\Creator\WriterEntityFactory;
+use TA\Spout\Writer\Exception\WriterAlreadyOpenedException;
+use TA\Spout\Writer\Exception\WriterNotOpenedException;
+use TA\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -450,7 +450,7 @@ class WriterTest extends TestCase
         ]);
 
         // set the maxRowsPerSheet limit to 2
-        \ReflectionHelper::setStaticValue('\Box\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
+        \ReflectionHelper::setStaticValue('\TA\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
 
         $writer = $this->writeToODSFile($dataRows, $fileName, $shouldCreateSheetsAutomatically = true);
         $this->assertCount(2, $writer->getSheets(), '2 sheets should have been created.');
@@ -474,7 +474,7 @@ class WriterTest extends TestCase
         ]);
 
         // set the maxRowsPerSheet limit to 2
-        \ReflectionHelper::setStaticValue('\Box\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
+        \ReflectionHelper::setStaticValue('\TA\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
 
         $writer = $this->writeToODSFile($dataRows, $fileName, $shouldCreateSheetsAutomatically = false);
         $this->assertCount(1, $writer->getSheets(), 'Only 1 sheet should have been created.');

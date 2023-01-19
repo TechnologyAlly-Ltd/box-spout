@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX;
+namespace TA\Spout\Reader\XLSX;
 
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\TestUsingResource;
+use TA\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use TA\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

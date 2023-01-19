@@ -1,21 +1,21 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace TA\Spout\Reader\ODS;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Reader\Common\Entity\Options;
-use Box\Spout\Reader\Common\Manager\RowManager;
-use Box\Spout\Reader\Common\XMLProcessor;
-use Box\Spout\Reader\Exception\InvalidValueException;
-use Box\Spout\Reader\Exception\IteratorNotRewindableException;
-use Box\Spout\Reader\Exception\XMLProcessingException;
-use Box\Spout\Reader\IteratorInterface;
-use Box\Spout\Reader\ODS\Creator\InternalEntityFactory;
-use Box\Spout\Reader\ODS\Helper\CellValueFormatter;
-use Box\Spout\Reader\Wrapper\XMLReader;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Common\Manager\OptionsManagerInterface;
+use TA\Spout\Reader\Common\Entity\Options;
+use TA\Spout\Reader\Common\Manager\RowManager;
+use TA\Spout\Reader\Common\XMLProcessor;
+use TA\Spout\Reader\Exception\InvalidValueException;
+use TA\Spout\Reader\Exception\IteratorNotRewindableException;
+use TA\Spout\Reader\Exception\XMLProcessingException;
+use TA\Spout\Reader\IteratorInterface;
+use TA\Spout\Reader\ODS\Creator\InternalEntityFactory;
+use TA\Spout\Reader\ODS\Helper\CellValueFormatter;
+use TA\Spout\Reader\Wrapper\XMLReader;
 
 /**
  * Class RowIterator
@@ -32,10 +32,10 @@ class RowIterator implements IteratorInterface
     public const XML_ATTRIBUTE_NUM_ROWS_REPEATED = 'table:number-rows-repeated';
     public const XML_ATTRIBUTE_NUM_COLUMNS_REPEATED = 'table:number-columns-repeated';
 
-    /** @var \Box\Spout\Reader\Wrapper\XMLReader The XMLReader object that will help read sheet's XML data */
+    /** @var \TA\Spout\Reader\Wrapper\XMLReader The XMLReader object that will help read sheet's XML data */
     protected $xmlReader;
 
-    /** @var \Box\Spout\Reader\Common\XMLProcessor Helper Object to process XML nodes */
+    /** @var \TA\Spout\Reader\Common\XMLProcessor Helper Object to process XML nodes */
     protected $xmlProcessor;
 
     /** @var bool Whether empty rows should be returned or skipped */
@@ -115,7 +115,7 @@ class RowIterator implements IteratorInterface
      * NOTE: It can only be done once, as it is not possible to read an XML file backwards.
      * @see http://php.net/manual/en/iterator.rewind.php
      *
-     * @throws \Box\Spout\Reader\Exception\IteratorNotRewindableException If the iterator is rewound more than once
+     * @throws \TA\Spout\Reader\Exception\IteratorNotRewindableException If the iterator is rewound more than once
      * @return void
      */
     public function rewind() : void
@@ -151,8 +151,8 @@ class RowIterator implements IteratorInterface
      * Move forward to next element. Empty rows will be skipped.
      * @see http://php.net/manual/en/iterator.next.php
      *
-     * @throws \Box\Spout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
-     * @throws \Box\Spout\Common\Exception\IOException If unable to read the sheet data XML
+     * @throws \TA\Spout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
+     * @throws \TA\Spout\Common\Exception\IOException If unable to read the sheet data XML
      * @return void
      */
     public function next() : void
@@ -184,8 +184,8 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @throws \Box\Spout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
-     * @throws \Box\Spout\Common\Exception\IOException If unable to read the sheet data XML
+     * @throws \TA\Spout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
+     * @throws \TA\Spout\Common\Exception\IOException If unable to read the sheet data XML
      * @return void
      */
     protected function readDataForNextRow()
@@ -202,7 +202,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \Box\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-row>" starting node
+     * @param \TA\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-row>" starting node
      * @return int A return code that indicates what action should the processor take next
      */
     protected function processRowStartingNode($xmlReader)
@@ -217,7 +217,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \Box\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-cell>" starting node
+     * @param \TA\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-cell>" starting node
      * @return int A return code that indicates what action should the processor take next
      */
     protected function processCellStartingNode($xmlReader)
@@ -293,7 +293,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \Box\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-row>" starting node
+     * @param \TA\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-row>" starting node
      * @return int The value of "table:number-rows-repeated" attribute of the current node, or 1 if attribute missing
      */
     protected function getNumRowsRepeatedForCurrentNode($xmlReader)
@@ -304,7 +304,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \Box\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-cell>" starting node
+     * @param \TA\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<table:table-cell>" starting node
      * @return int The value of "table:number-columns-repeated" attribute of the current node, or 1 if attribute missing
      */
     protected function getNumColumnsRepeatedForCurrentNode($xmlReader)

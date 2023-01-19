@@ -1,12 +1,12 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Manager;
+namespace TA\Spout\Reader\Common\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory;
-use Box\Spout\Reader\XLSX\Creator\ManagerFactory;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Reader\XLSX\Creator\HelperFactory;
+use TA\Spout\Reader\XLSX\Creator\InternalEntityFactory;
+use TA\Spout\Reader\XLSX\Creator\ManagerFactory;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager;
+namespace TA\Spout\Writer\XLSX\Manager;
 
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Manager\WorkbookManagerAbstract;
-use Box\Spout\Writer\XLSX\Helper\FileSystemHelper;
-use Box\Spout\Writer\XLSX\Manager\Style\StyleManager;
+use TA\Spout\Writer\Common\Entity\Sheet;
+use TA\Spout\Writer\Common\Manager\WorkbookManagerAbstract;
+use TA\Spout\Writer\XLSX\Helper\FileSystemHelper;
+use TA\Spout\Writer\XLSX\Manager\Style\StyleManager;
 
 /**
  * Class WorkbookManager

@@ -1,12 +1,12 @@
 <?php
 
-namespace Box\Spout\Writer\CSV;
+namespace TA\Spout\Writer\CSV;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Helper\EncodingHelper;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\WriterAbstract;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Common\Helper\EncodingHelper;
+use TA\Spout\Writer\Common\Entity\Options;
+use TA\Spout\Writer\WriterAbstract;
 
 /**
  * Class Writer

@@ -1,12 +1,12 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX;
+namespace TA\Spout\Writer\XLSX;
 
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Exception\InvalidSheetNameException;
-use Box\Spout\Writer\RowCreationHelper;
+use TA\Spout\TestUsingResource;
+use TA\Spout\Writer\Common\Creator\WriterEntityFactory;
+use TA\Spout\Writer\Common\Entity\Sheet;
+use TA\Spout\Writer\Exception\InvalidSheetNameException;
+use TA\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

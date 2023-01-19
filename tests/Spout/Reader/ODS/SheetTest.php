@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace TA\Spout\Reader\ODS;
 
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\TestUsingResource;
+use TA\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use TA\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

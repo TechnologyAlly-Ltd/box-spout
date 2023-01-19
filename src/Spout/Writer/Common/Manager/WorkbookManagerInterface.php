@@ -1,14 +1,14 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager;
+namespace TA\Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Entity\Workbook;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Exception\SheetNotFoundException;
-use Box\Spout\Writer\Exception\WriterException;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Writer\Common\Entity\Sheet;
+use TA\Spout\Writer\Common\Entity\Workbook;
+use TA\Spout\Writer\Common\Entity\Worksheet;
+use TA\Spout\Writer\Exception\SheetNotFoundException;
+use TA\Spout\Writer\Exception\WriterException;
 
 /**
  * Interface WorkbookManagerInterface

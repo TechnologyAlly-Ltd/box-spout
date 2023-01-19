@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace TA\Spout\Reader\ODS;
 
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\Reader\Exception\IteratorNotRewindableException;
-use Box\Spout\TestUsingResource;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use TA\Spout\Reader\Exception\IteratorNotRewindableException;
+use TA\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,15 +1,15 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Manager;
+namespace TA\Spout\Reader\XLSX\Manager;
 
-use Box\Spout\Reader\Exception\SharedStringNotFoundException;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory;
-use Box\Spout\Reader\XLSX\Creator\ManagerFactory;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\FileBasedStrategy;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\InMemoryStrategy;
-use Box\Spout\TestUsingResource;
+use TA\Spout\Reader\Exception\SharedStringNotFoundException;
+use TA\Spout\Reader\XLSX\Creator\HelperFactory;
+use TA\Spout\Reader\XLSX\Creator\InternalEntityFactory;
+use TA\Spout\Reader\XLSX\Creator\ManagerFactory;
+use TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\FileBasedStrategy;
+use TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\InMemoryStrategy;
+use TA\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

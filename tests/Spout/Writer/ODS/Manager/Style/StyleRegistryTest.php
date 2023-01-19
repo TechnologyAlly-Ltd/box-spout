@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Manager\Style;
+namespace TA\Spout\Writer\ODS\Manager\Style;
 
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use TA\Spout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

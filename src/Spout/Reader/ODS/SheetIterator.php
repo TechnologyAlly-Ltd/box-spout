@@ -1,13 +1,13 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace TA\Spout\Reader\ODS;
 
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Reader\Exception\XMLProcessingException;
-use Box\Spout\Reader\IteratorInterface;
-use Box\Spout\Reader\ODS\Creator\InternalEntityFactory;
-use Box\Spout\Reader\ODS\Helper\SettingsHelper;
-use Box\Spout\Reader\Wrapper\XMLReader;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Reader\Exception\XMLProcessingException;
+use TA\Spout\Reader\IteratorInterface;
+use TA\Spout\Reader\ODS\Creator\InternalEntityFactory;
+use TA\Spout\Reader\ODS\Helper\SettingsHelper;
+use TA\Spout\Reader\Wrapper\XMLReader;
 
 /**
  * Class SheetIterator
@@ -31,7 +31,7 @@ class SheetIterator implements IteratorInterface
     /** @var string Path of the file to be read */
     protected $filePath;
 
-    /** @var \Box\Spout\Common\Manager\OptionsManagerInterface Reader's options manager */
+    /** @var \TA\Spout\Common\Manager\OptionsManagerInterface Reader's options manager */
     protected $optionsManager;
 
     /** @var InternalEntityFactory Factory to create entities */
@@ -40,7 +40,7 @@ class SheetIterator implements IteratorInterface
     /** @var XMLReader The XMLReader object that will help read sheet's XML data */
     protected $xmlReader;
 
-    /** @var \Box\Spout\Common\Helper\Escaper\ODS Used to unescape XML data */
+    /** @var \TA\Spout\Common\Helper\Escaper\ODS Used to unescape XML data */
     protected $escaper;
 
     /** @var bool Whether there are still at least a sheet to be read */
@@ -57,8 +57,8 @@ class SheetIterator implements IteratorInterface
 
     /**
      * @param string $filePath Path of the file to be read
-     * @param \Box\Spout\Common\Manager\OptionsManagerInterface $optionsManager
-     * @param \Box\Spout\Common\Helper\Escaper\ODS $escaper Used to unescape XML data
+     * @param \TA\Spout\Common\Manager\OptionsManagerInterface $optionsManager
+     * @param \TA\Spout\Common\Helper\Escaper\ODS $escaper Used to unescape XML data
      * @param SettingsHelper $settingsHelper Helper to get data from "settings.xml"
      * @param InternalEntityFactory $entityFactory Factory to create entities
      */
@@ -76,7 +76,7 @@ class SheetIterator implements IteratorInterface
      * Rewind the Iterator to the first element
      * @see http://php.net/manual/en/iterator.rewind.php
      *
-     * @throws \Box\Spout\Common\Exception\IOException If unable to open the XML file containing sheets' data
+     * @throws \TA\Spout\Common\Exception\IOException If unable to open the XML file containing sheets' data
      * @return void
      */
     public function rewind(): void
@@ -157,7 +157,7 @@ class SheetIterator implements IteratorInterface
      * Return the current element
      * @see http://php.net/manual/en/iterator.current.php
      *
-     * @return \Box\Spout\Reader\ODS\Sheet
+     * @return \TA\Spout\Reader\ODS\Sheet
      */
     public function current()
     {

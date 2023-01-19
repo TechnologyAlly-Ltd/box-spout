@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager\Style;
+namespace TA\Spout\Writer\Common\Manager\Style;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Style\Style;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Style\Style;
 
 /**
  * Class StyleManager

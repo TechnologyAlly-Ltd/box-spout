@@ -14,8 +14,8 @@ In order to avoid memory issues when dealing with large spreadsheets, {{ site.sp
 ```php
 <?php
 
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
+use TA\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use TA\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 $existingFilePath = 'path/to/orders.xlsx';
 $newFilePath = 'path/to/new-orders.xlsx';

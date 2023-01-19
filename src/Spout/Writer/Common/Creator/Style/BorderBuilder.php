@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator\Style;
+namespace TA\Spout\Writer\Common\Creator\Style;
 
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\BorderPart;
-use Box\Spout\Common\Entity\Style\Color;
+use TA\Spout\Common\Entity\Style\Border;
+use TA\Spout\Common\Entity\Style\BorderPart;
+use TA\Spout\Common\Entity\Style\Color;
 
 /**
  * Class BorderBuilder

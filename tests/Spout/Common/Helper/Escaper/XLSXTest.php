@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Common\Helper\Escaper;
+namespace TA\Spout\Common\Helper\Escaper;
 
-use Box\Spout\Common\Helper\Escaper;
+use TA\Spout\Common\Helper\Escaper;
 use PHPUnit\Framework\TestCase;
 
 /**

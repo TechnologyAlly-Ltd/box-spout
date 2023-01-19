@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager;
+namespace TA\Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Style\Style;
+use TA\Spout\Common\Entity\Style\Style;
 
 /**
  * Class RegisteredStyle

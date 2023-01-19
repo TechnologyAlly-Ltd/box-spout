@@ -1,15 +1,15 @@
 <?php
 
-namespace Box\Spout\Writer\CSV;
+namespace TA\Spout\Writer\CSV;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Helper\EncodingHelper;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Exception\InvalidArgumentException;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Common\Helper\EncodingHelper;
+use TA\Spout\TestUsingResource;
+use TA\Spout\Writer\Common\Creator\WriterEntityFactory;
+use TA\Spout\Writer\Exception\WriterNotOpenedException;
+use TA\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

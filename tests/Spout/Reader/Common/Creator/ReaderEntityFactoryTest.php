@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Creator;
+namespace TA\Spout\Reader\Common\Creator;
 
-use Box\Spout\Common\Exception\UnsupportedTypeException;
-use Box\Spout\TestUsingResource;
+use TA\Spout\Common\Exception\UnsupportedTypeException;
+use TA\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 class ReaderEntityFactoryTest extends TestCase
@@ -17,7 +17,7 @@ class ReaderEntityFactoryTest extends TestCase
     {
         $validCsv = $this->getResourcePath('csv_test_create_from_file.csv');
         $reader = ReaderEntityFactory::createReaderFromFile($validCsv);
-        $this->assertInstanceOf('Box\Spout\Reader\CSV\Reader', $reader);
+        $this->assertInstanceOf('TA\Spout\Reader\CSV\Reader', $reader);
     }
 
     /**
@@ -27,7 +27,7 @@ class ReaderEntityFactoryTest extends TestCase
     {
         $validCsv = $this->getResourcePath('csv_test_create_from_file.CSV');
         $reader = ReaderEntityFactory::createReaderFromFile($validCsv);
-        $this->assertInstanceOf('Box\Spout\Reader\CSV\Reader', $reader);
+        $this->assertInstanceOf('TA\Spout\Reader\CSV\Reader', $reader);
     }
 
     /**
@@ -37,7 +37,7 @@ class ReaderEntityFactoryTest extends TestCase
     {
         $validOds = $this->getResourcePath('csv_test_create_from_file.ods');
         $reader = ReaderEntityFactory::createReaderFromFile($validOds);
-        $this->assertInstanceOf('Box\Spout\Reader\ODS\Reader', $reader);
+        $this->assertInstanceOf('TA\Spout\Reader\ODS\Reader', $reader);
     }
 
     /**
@@ -47,7 +47,7 @@ class ReaderEntityFactoryTest extends TestCase
     {
         $validXlsx = $this->getResourcePath('csv_test_create_from_file.xlsx');
         $reader = ReaderEntityFactory::createReaderFromFile($validXlsx);
-        $this->assertInstanceOf('Box\Spout\Reader\XLSX\Reader', $reader);
+        $this->assertInstanceOf('TA\Spout\Reader\XLSX\Reader', $reader);
     }
 
     /**
@@ -67,6 +67,6 @@ class ReaderEntityFactoryTest extends TestCase
     {
         $notExistingFile = 'thereisnosuchfile.csv';
         $reader = ReaderEntityFactory::createReaderFromFile($notExistingFile);
-        $this->assertInstanceOf('Box\Spout\Reader\CSV\Reader', $reader);
+        $this->assertInstanceOf('TA\Spout\Reader\CSV\Reader', $reader);
     }
 }

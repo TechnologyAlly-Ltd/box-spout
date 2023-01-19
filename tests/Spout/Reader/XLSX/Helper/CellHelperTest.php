@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Helper;
+namespace TA\Spout\Reader\XLSX\Helper;
 
-use Box\Spout\Common\Exception\InvalidArgumentException;
+use TA\Spout\Common\Exception\InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 /**

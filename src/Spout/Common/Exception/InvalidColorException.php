@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Exception;
+namespace TA\Spout\Common\Exception;
 
 /**
  * Class InvalidColorException

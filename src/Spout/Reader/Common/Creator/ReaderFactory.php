@@ -1,25 +1,25 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Creator;
+namespace TA\Spout\Reader\Common\Creator;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Exception\UnsupportedTypeException;
-use Box\Spout\Common\Type;
-use Box\Spout\Reader\CSV\Creator\InternalEntityFactory as CSVInternalEntityFactory;
-use Box\Spout\Reader\CSV\Manager\OptionsManager as CSVOptionsManager;
-use Box\Spout\Reader\CSV\Reader as CSVReader;
-use Box\Spout\Reader\ODS\Creator\HelperFactory as ODSHelperFactory;
-use Box\Spout\Reader\ODS\Creator\InternalEntityFactory as ODSInternalEntityFactory;
-use Box\Spout\Reader\ODS\Creator\ManagerFactory as ODSManagerFactory;
-use Box\Spout\Reader\ODS\Manager\OptionsManager as ODSOptionsManager;
-use Box\Spout\Reader\ODS\Reader as ODSReader;
-use Box\Spout\Reader\ReaderInterface;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory as XLSXHelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory as XLSXInternalEntityFactory;
-use Box\Spout\Reader\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
-use Box\Spout\Reader\XLSX\Manager\OptionsManager as XLSXOptionsManager;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use Box\Spout\Reader\XLSX\Reader as XLSXReader;
+use TA\Spout\Common\Creator\HelperFactory;
+use TA\Spout\Common\Exception\UnsupportedTypeException;
+use TA\Spout\Common\Type;
+use TA\Spout\Reader\CSV\Creator\InternalEntityFactory as CSVInternalEntityFactory;
+use TA\Spout\Reader\CSV\Manager\OptionsManager as CSVOptionsManager;
+use TA\Spout\Reader\CSV\Reader as CSVReader;
+use TA\Spout\Reader\ODS\Creator\HelperFactory as ODSHelperFactory;
+use TA\Spout\Reader\ODS\Creator\InternalEntityFactory as ODSInternalEntityFactory;
+use TA\Spout\Reader\ODS\Creator\ManagerFactory as ODSManagerFactory;
+use TA\Spout\Reader\ODS\Manager\OptionsManager as ODSOptionsManager;
+use TA\Spout\Reader\ODS\Reader as ODSReader;
+use TA\Spout\Reader\ReaderInterface;
+use TA\Spout\Reader\XLSX\Creator\HelperFactory as XLSXHelperFactory;
+use TA\Spout\Reader\XLSX\Creator\InternalEntityFactory as XLSXInternalEntityFactory;
+use TA\Spout\Reader\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
+use TA\Spout\Reader\XLSX\Manager\OptionsManager as XLSXOptionsManager;
+use TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use TA\Spout\Reader\XLSX\Reader as XLSXReader;
 
 /**
  * Class ReaderFactory
@@ -32,7 +32,7 @@ class ReaderFactory
      * Creates a reader by file extension
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv,.ods and .xlsx
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \TA\Spout\Common\Exception\UnsupportedTypeException
      * @return ReaderInterface
      */
     public static function createFromFile(string $path)
@@ -46,7 +46,7 @@ class ReaderFactory
      * This creates an instance of the appropriate reader, given the type of the file to be read
      *
      * @param string $readerType Type of the reader to instantiate
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \TA\Spout\Common\Exception\UnsupportedTypeException
      * @return ReaderInterface
      */
     public static function createFromType($readerType)

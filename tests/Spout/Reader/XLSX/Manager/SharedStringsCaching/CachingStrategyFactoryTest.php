@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Manager\SharedStringsCaching;
+namespace TA\Spout\Reader\XLSX\Manager\SharedStringsCaching;
 
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
+use TA\Spout\Reader\XLSX\Creator\HelperFactory;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -38,7 +38,7 @@ class CachingStrategyFactoryTest extends TestCase
     {
         /** @var CachingStrategyFactory|\PHPUnit\Framework\MockObject\MockObject $factoryStub */
         $factoryStub = $this
-            ->getMockBuilder('\Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
+            ->getMockBuilder('\TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
             ->disableOriginalConstructor()
             ->onlyMethods(['getMemoryLimitInKB'])
             ->getMock();
@@ -49,7 +49,7 @@ class CachingStrategyFactoryTest extends TestCase
         $helperFactory = new HelperFactory();
         $strategy = $factoryStub->createBestCachingStrategy($sharedStringsUniqueCount, $tempFolder, $helperFactory);
 
-        $fullExpectedStrategyClassName = 'Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\\' . $expectedStrategyClassName;
+        $fullExpectedStrategyClassName = 'TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\\' . $expectedStrategyClassName;
         $this->assertEquals($fullExpectedStrategyClassName, get_class($strategy));
 
         $strategy->clearCache();
@@ -86,7 +86,7 @@ class CachingStrategyFactoryTest extends TestCase
     {
         /** @var CachingStrategyFactory|\PHPUnit\Framework\MockObject\MockObject $factoryStub */
         $factoryStub = $this
-            ->getMockBuilder('\Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
+            ->getMockBuilder('\TA\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
             ->disableOriginalConstructor()
             ->onlyMethods(['getMemoryLimitFromIni'])
             ->getMock();

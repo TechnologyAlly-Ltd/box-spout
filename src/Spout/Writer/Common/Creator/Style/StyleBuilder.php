@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator\Style;
+namespace TA\Spout\Writer\Common\Creator\Style;
 
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\CellAlignment;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Exception\InvalidArgumentException;
+use TA\Spout\Common\Entity\Style\Border;
+use TA\Spout\Common\Entity\Style\CellAlignment;
+use TA\Spout\Common\Entity\Style\Style;
+use TA\Spout\Common\Exception\InvalidArgumentException;
 
 /**
  * Class StyleBuilder

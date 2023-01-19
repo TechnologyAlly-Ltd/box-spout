@@ -1,19 +1,19 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Creator;
+namespace TA\Spout\Writer\XLSX\Creator;
 
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Creator\InternalEntityFactory;
-use Box\Spout\Writer\Common\Creator\ManagerFactoryInterface;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Common\Manager\RowManager;
-use Box\Spout\Writer\Common\Manager\SheetManager;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\XLSX\Manager\SharedStringsManager;
-use Box\Spout\Writer\XLSX\Manager\Style\StyleManager;
-use Box\Spout\Writer\XLSX\Manager\Style\StyleRegistry;
-use Box\Spout\Writer\XLSX\Manager\WorkbookManager;
-use Box\Spout\Writer\XLSX\Manager\WorksheetManager;
+use TA\Spout\Common\Manager\OptionsManagerInterface;
+use TA\Spout\Writer\Common\Creator\InternalEntityFactory;
+use TA\Spout\Writer\Common\Creator\ManagerFactoryInterface;
+use TA\Spout\Writer\Common\Entity\Options;
+use TA\Spout\Writer\Common\Manager\RowManager;
+use TA\Spout\Writer\Common\Manager\SheetManager;
+use TA\Spout\Writer\Common\Manager\Style\StyleMerger;
+use TA\Spout\Writer\XLSX\Manager\SharedStringsManager;
+use TA\Spout\Writer\XLSX\Manager\Style\StyleManager;
+use TA\Spout\Writer\XLSX\Manager\Style\StyleRegistry;
+use TA\Spout\Writer\XLSX\Manager\WorkbookManager;
+use TA\Spout\Writer\XLSX\Manager\WorksheetManager;
 
 /**
  * Class ManagerFactory

@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Reader;
+namespace TA\Spout\Reader;
 
 /**
  * Interface SheetInterface

@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager\Style;
+namespace TA\Spout\Writer\XLSX\Manager\Style;
 
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Writer\Common\Creator\Style\BorderBuilder;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use TA\Spout\Common\Entity\Style\Color;
+use TA\Spout\Writer\Common\Creator\Style\BorderBuilder;
+use TA\Spout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

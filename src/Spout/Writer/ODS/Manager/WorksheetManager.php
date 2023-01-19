@@ -1,19 +1,19 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Manager;
+namespace TA\Spout\Writer\ODS\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Helper\Escaper\ODS as ODSEscaper;
-use Box\Spout\Common\Helper\StringHelper;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Common\Manager\RegisteredStyle;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\Common\Manager\WorksheetManagerInterface;
-use Box\Spout\Writer\ODS\Manager\Style\StyleManager;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Entity\Style\Style;
+use TA\Spout\Common\Exception\InvalidArgumentException;
+use TA\Spout\Common\Exception\IOException;
+use TA\Spout\Common\Helper\Escaper\ODS as ODSEscaper;
+use TA\Spout\Common\Helper\StringHelper;
+use TA\Spout\Writer\Common\Entity\Worksheet;
+use TA\Spout\Writer\Common\Manager\RegisteredStyle;
+use TA\Spout\Writer\Common\Manager\Style\StyleMerger;
+use TA\Spout\Writer\Common\Manager\WorksheetManagerInterface;
+use TA\Spout\Writer\ODS\Manager\Style\StyleManager;
 
 /**
  * Class WorksheetManager
@@ -21,7 +21,7 @@ use Box\Spout\Writer\ODS\Manager\Style\StyleManager;
  */
 class WorksheetManager implements WorksheetManagerInterface
 {
-    /** @var \Box\Spout\Common\Helper\Escaper\ODS Strings escaper */
+    /** @var \TA\Spout\Common\Helper\Escaper\ODS Strings escaper */
     private $stringsEscaper;
 
     /** @var StringHelper String helper */
@@ -57,7 +57,7 @@ class WorksheetManager implements WorksheetManagerInterface
      * Prepares the worksheet to accept data
      *
      * @param Worksheet $worksheet The worksheet to start
-     * @throws \Box\Spout\Common\Exception\IOException If the sheet data file cannot be opened for writing
+     * @throws \TA\Spout\Common\Exception\IOException If the sheet data file cannot be opened for writing
      * @return void
      */
     public function startSheet(Worksheet $worksheet)

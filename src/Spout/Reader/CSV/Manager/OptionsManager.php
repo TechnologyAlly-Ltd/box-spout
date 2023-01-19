@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Reader\CSV\Manager;
+namespace TA\Spout\Reader\CSV\Manager;
 
-use Box\Spout\Common\Helper\EncodingHelper;
-use Box\Spout\Common\Manager\OptionsManagerAbstract;
-use Box\Spout\Reader\Common\Entity\Options;
+use TA\Spout\Common\Helper\EncodingHelper;
+use TA\Spout\Common\Manager\OptionsManagerAbstract;
+use TA\Spout\Reader\Common\Entity\Options;
 
 /**
  * Class OptionsManager

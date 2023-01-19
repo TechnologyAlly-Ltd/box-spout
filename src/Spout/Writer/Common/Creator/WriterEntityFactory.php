@@ -1,13 +1,13 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator;
+namespace TA\Spout\Writer\Common\Creator;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Exception\UnsupportedTypeException;
-use Box\Spout\Common\Type;
-use Box\Spout\Writer\WriterInterface;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Entity\Style\Style;
+use TA\Spout\Common\Exception\UnsupportedTypeException;
+use TA\Spout\Common\Type;
+use TA\Spout\Writer\WriterInterface;
 
 /**
  * Class WriterEntityFactory
@@ -19,7 +19,7 @@ class WriterEntityFactory
      * This creates an instance of the appropriate writer, given the type of the file to be written
      *
      * @param  string $writerType Type of the writer to instantiate
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \TA\Spout\Common\Exception\UnsupportedTypeException
      * @return WriterInterface
      */
     public static function createWriter($writerType)
@@ -31,7 +31,7 @@ class WriterEntityFactory
      * This creates an instance of the appropriate writer, given the extension of the file to be written
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv, .ods and .xlsx
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \TA\Spout\Common\Exception\UnsupportedTypeException
      * @return WriterInterface
      */
     public static function createWriterFromFile(string $path)
@@ -42,7 +42,7 @@ class WriterEntityFactory
     /**
      * This creates an instance of a CSV writer
      *
-     * @return \Box\Spout\Writer\CSV\Writer
+     * @return \TA\Spout\Writer\CSV\Writer
      */
     public static function createCSVWriter()
     {
@@ -57,7 +57,7 @@ class WriterEntityFactory
     /**
      * This creates an instance of a XLSX writer
      *
-     * @return \Box\Spout\Writer\XLSX\Writer
+     * @return \TA\Spout\Writer\XLSX\Writer
      */
     public static function createXLSXWriter()
     {
@@ -72,7 +72,7 @@ class WriterEntityFactory
     /**
      * This creates an instance of a ODS writer
      *
-     * @return \Box\Spout\Writer\ODS\Writer
+     * @return \TA\Spout\Writer\ODS\Writer
      */
     public static function createODSWriter()
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer;
+namespace TA\Spout\Writer;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
+use TA\Spout\Common\Entity\Row;
+use TA\Spout\Common\Entity\Style\Style;
+use TA\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 /**
  * Trait RowCreationHelper

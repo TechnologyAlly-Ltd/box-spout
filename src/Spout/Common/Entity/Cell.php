@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Common\Entity;
+namespace TA\Spout\Common\Entity;
 
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Helper\CellTypeHelper;
+use TA\Spout\Common\Entity\Style\Style;
+use TA\Spout\Common\Helper\CellTypeHelper;
 
 /**
  * Class Cell

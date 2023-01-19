@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Creator;
+namespace TA\Spout\Reader\Common\Creator;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
+use TA\Spout\Common\Entity\Cell;
+use TA\Spout\Common\Entity\Row;
 
 /**
  * Interface EntityFactoryInterface

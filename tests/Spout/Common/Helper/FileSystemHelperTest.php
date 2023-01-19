@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Common\Helper;
+namespace TA\Spout\Common\Helper;
 
-use Box\Spout\Common\Exception\IOException;
+use TA\Spout\Common\Exception\IOException;
 use PHPUnit\Framework\TestCase;
 
 /**
