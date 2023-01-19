@@ -159,7 +159,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return \TA\Spout\Reader\ODS\Sheet
      */
-    public function current()
+    public function current(): mixed
     {
         $escapedSheetName = $this->xmlReader->getAttribute(self::XML_ATTRIBUTE_TABLE_NAME);
         $sheetName = $this->escaper->unescape($escapedSheetName);
@@ -216,7 +216,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return int
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->currentSheetIndex + 1;
     }
